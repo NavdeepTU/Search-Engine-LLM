@@ -7,7 +7,7 @@ from langchain.callbacks import StreamlitCallbackHandler
 import os
 from dotenv import load_dotenv
 
-# arxiv and wikipedia tools
+## arxiv and wikipedia tools
 api_wrapper_arxiv = ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=250)
 arxiv = ArxivQueryRun(api_wrapper=api_wrapper_arxiv)
 
